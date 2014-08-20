@@ -1,9 +1,24 @@
 # promisify2
 future-proof promisify
 
-## usage
+same functionality as [promisify](https://npm.im/promisify) but using native promise constructor (node 0.11+) or bluebird.
+
+## usage example
 ```js
-var promisify2 = require('promisify2')
+var promisify = require('promisify2')
+
+var foo = promisify(asyncFoo)
+
+foo(1,2).then(function (val) {
+  console.log(val)
+}, handleErrors)
+
+// equivalent to
+asyncFoo(1,2, function (err, val) {
+  if (err) { return handleErrors(err) }
+  console.log(val)
+})
+
 ```
 
 

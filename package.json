@@ -3,7 +3,12 @@
   "author": "jden <jason@denizac.org>",
   "version": "0.1.0",
   "description": "future-proof promisify",
-  "keywords": ["promises", "node", "callback", "continuation"],
+  "keywords": [
+    "promises",
+    "node",
+    "callback",
+    "continuation"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -13,5 +18,8 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "mochi": "0.1.0"
+  },
+  "dependencies": {
+    "polyfill-promise": "^1.0.0"
   }
 }
