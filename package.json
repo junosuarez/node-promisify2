@@ -1,0 +1,17 @@
+{
+  "name": "promisify2",
+  "author": "jden <jason@denizac.org>",
+  "version": "0.1.0",
+  "description": "future-proof promisify",
+  "keywords": ["promises", "node", "callback", "continuation"],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": "git@github.com:jden/node-promisify2.git",
+  "license": "ISC",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "mochi": "0.1.0"
+  }
+}
